@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+
+    & a {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+/* === main-content === */
+.container {
+    display: flex;
+    justify-content: center;
+    min-width: 700px;
+    margin-top: 10vh;
+
+    & .item1 {
+        padding: 10px
+    }
+}
+
+
+.box {
+    text-align: center;
+    margin-top: 5em;
+    width: 100%;
+    height: auto;
+
+    & .into2 {
+        margin-top: 1em;
+        padding: 10px;
+        background-color: #3d6ae4;
+        border-radius: 2px;
+        transition: 0.8s ease;
+
+        &.into2:Hover {
+            transition: 0.7s ease;
+            padding: 20px;
+            margin-top: 1em;
+            background-color: #3de483;
+            color: #ffffff;
+        }
+    }
+}
+
+/* === button === */
+.into {
+    padding: 15px;
+    border: 1px solid #3d6ae4;
+    width: 100%;
+    height: auto;
+}
+
+.into:Hover {
+    transition: 0.8s ease;
+    border: 1px solid #3de483;
+}
+
+.into img {
+    width: 250px;
+    border-radius: 100%;
+    cursor: grab;
+    transition: 0.6s ease;
+}
+
+.into img:Hover {
+    transition: 0.6s ease;
+    width: 265px;
+    border-radius: 100%;
+    cursor: grab;
+}
+
+/* === footer ===  */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+
+    & p {
+        text-align: center;
+        color: #3d6ae4;
+    }
+}
+
+@media screen and (width <=768px) {
+    .container {
+        min-width: 320px;
+
+        & .item1 {
+            padding: 10px;
+        }
+    }
+
+}
